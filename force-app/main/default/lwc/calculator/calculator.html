@@ -1,0 +1,70 @@
+<template>
+     <!-- Open your mobile and navigate to calculator section, and try to mimic your calculator functionality  -->
+     <div class="calculator">
+          <div class="result">{result}</div>
+          <div class="column clear-row">
+               <div class="row">
+                    <button onclick={handleClear}>CLEAR</button>
+               </div>
+               <div class="row">
+                    <button onclick={handleDelete}>DELETE</button>
+               </div>
+          </div>
+          <div class="column">
+               <div class="row">
+                    <button onclick={handleInput} value="7">7</button>
+               </div>
+               <div class="row">
+                    <button onclick={handleInput} value="8">8</button>
+               </div>
+               <div class="row">
+                    <button onclick={handleInput} value="9">9</button>
+               </div>
+               <div class="row">
+                    <button onclick={handleInput} value="*">*</button>
+               </div>
+          </div>
+          <div class="column">
+               <div class="row">
+                    <button onclick={handleInput} value="4">4</button>
+               </div>
+               <div class="row">
+                    <button onclick={handleInput} value="5">5</button>
+               </div>
+               <div class="row">
+                    <button onclick={handleInput} value="6">6</button>
+               </div>
+               <div class="row">
+                    <button onclick={handleInput} value="-">-</button>
+               </div>
+          </div>
+          <div class="column">
+               <div class="row">
+                    <button onclick={handleInput} value="1">1</button>
+               </div>
+               <div class="row">
+                    <button onclick={handleInput} value="2">2</button>
+               </div>
+               <div class="row">
+                    <button onclick={handleInput} value="3">3</button>
+               </div>
+               <div class="row">
+                    <button onclick={handleInput} value="+">+</button>
+               </div>
+          </div>
+          <div class="column">
+               <div class="row">
+                    <button onclick={handleInput} value="/">%</button>
+               </div>
+               <div class="row">
+                    <button onclick={handleInput} value="0">0</button>
+               </div>
+               <div class="row">
+                    <button onclick={handleInput} value=".">.</button>
+               </div>
+               <div class="row">
+                    <button onclick={handleCalculate}>=</button>
+               </div>
+          </div>
+     </div>
+</template>
